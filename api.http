@@ -1,0 +1,53 @@
+### consultar todos los productos
+GET http://localhost:1234/products
+
+### obtener producto por id
+GET http://localhost:1234/products/2
+
+### crear un producto
+POST http://localhost:1234/products
+Content-Type: application/json
+
+{   
+    "id_category": 1,
+	"title": "zapatillas nike",
+    "description": "zapatillas nike deportivas",
+    "price": 125,
+    "image": "https://nikearprod.vtexassets.com/arquivos/ids/699302/DD9283_001_A_PREM.jpg?v=638229666904000000"
+}
+
+### borrar un producto
+DELETE http://localhost:1234/products/23
+
+### actualizar un producto
+PATCH http://localhost:1234/products/1
+Content-Type: application/json
+
+{   
+    "price": 115
+}
+
+### consultar todas las categorias
+GET http://localhost:1234/categories
+
+### obtener categoria por id
+GET http://localhost:1234/categories/3
+
+### crear categoria
+POST http://localhost:1234/categories
+Content-Type: application/json
+
+{
+    "category": "mesas"
+}
+
+### borrar una categoria
+DELETE http://localhost:1234/categories/4
+
+### actualizar una categoria
+PATCH http://localhost:1234/categories/1
+Content-Type: application/json
+
+{   
+    "category": "Zapatillas"
+}

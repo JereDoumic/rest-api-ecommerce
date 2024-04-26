@@ -14,7 +14,7 @@ export class CategoryController{
         if(category){
             return res.json(category);
         }
-        res.status(404).json({ message: 'Movie not found' });
+        res.status(404).json({ message: 'Category not found' });
     }
 
     static async create(req, res){

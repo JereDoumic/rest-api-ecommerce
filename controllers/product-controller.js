@@ -16,7 +16,6 @@ export class ProductController{
     static async create(req, res) {
         const result = validateProduct(req.body);
         if(!result.success){
-            console.log(result.error);
             return res.status(400).json({error: JSON.parse(result.error.message)});        
         }
 
